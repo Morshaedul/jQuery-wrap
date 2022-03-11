@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Events of Submit</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+       
+    </style>
+</head>
+<body>
+
+    <select id="se" name="actors" >    
+        <option>Uthappa</option>    
+        <option selected="selected">Kattapa</option>    
+        <option>Veerappa</option>    
+        <option>Bahubali</option>    
+        <option>Bhallal Dev</option>    
+        <option>Awantika</option>    
+      </select> 
+        <div id="loc">wtewetg</div>
+
+    <script>  
+        $( "select" ) .change(function () {    
+        $("#loc").text="You selected: "+$("se").value;  
+        });  
+    </script>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
